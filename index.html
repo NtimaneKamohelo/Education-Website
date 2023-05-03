@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <!--link for -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/f ont-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <section class="header">
@@ -18,8 +18,8 @@
         <!-- add Logo: university-->
         <a href="index.html"> <img src="images/logo.png"> </a>
         <!--menu-Navigation bar links-->
-        <div class="nav-links">
-            <i class="fa fa-times" ></i>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
                 <li><a href="">HOME</a></li>
                 <li><a href="">ABOUT</a></li>
@@ -29,7 +29,7 @@
             </ul>
         </div>
         <!--MENU ICON-->
-        <i class="fa fa-bars"></i>
+        <i class="fa fa-bars" onclick="ShowMenu()"></i>
     </nav>
 
 <div class="text-box">
@@ -40,6 +40,17 @@
     <a href="" class="hero-btn">Visit Us to Know More</a>
 </div>
 </section>
+
+<!--javascript for toggle menu-->
+<script>
+    var navLinks= document.getElementById("navLinks");
+    function ShowMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
 
 </body>
 </html>
