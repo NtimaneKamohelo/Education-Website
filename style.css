@@ -125,3 +125,29 @@ nav .fa{
 
 }
 
+/**********Course page*********/
+
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 14%;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    Margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
