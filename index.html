@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>University Website Design</title>
+    <title>University Website Design - Learning basics</title>
+    <!--Link to the css style page-->
     <link rel="stylesheet" href="style.css">
+    <!--Google font links-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-    <!--link for -->
-    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/f ont-awesome/4.7.0/css/font-awesome.min.css">-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap" rel="stylesheet">
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
 </head>
 <body>
+<!--Section helps us to focus on one area of our html page: for this we focus on the header section-->
 <section class="header">
+    <!--nav= here I create navigation links to different web pages of the website when clicked on-->
     <nav>
-        <!-- add Logo: university-->
-        <a href="index.html"> <img src="images/logo.png"> </a>
-        <!--menu-Navigation bar links-->
+        <!--displays my logo-->
+        <a href="index.html"><img src="images/logo.png" ></a>
+        <!--The navigation links at the top of my page-->
         <div class="nav-links" id="navLinks">
-            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <i class="fa fa-times" onclick="HideMenu()"></i>
             <ul>
                 <li><a href="">HOME</a></li>
                 <li><a href="">ABOUT</a></li>
@@ -29,63 +31,31 @@
                 <li><a href="">CONTACT</a></li>
             </ul>
         </div>
-        <!--MENU ICON-->
-        <i class="fa fa-bars" onclick="ShowMenu()"></i>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
 
 <div class="text-box">
-    <h1>World's Biggest University</h1>
-    <p>Making website is one of the easiest thing in the world. you just need to learn 
-        HTML, CSS, <br> Javascript and you are good to go
+    <h1>Worlds Biggest University</h1>
+    <p>Making website is now one of the easiest thin in the world. 
+        You just need to learn HTML, CSS, <br> Javascript and you are good to go.
     </p>
-    <a href="" class="hero-btn">Visit Us to Know More</a>
+    <a href="" class="hero-btn">Visit us to know More</a>
 </div>
 </section>
 
-<!--Course page-->
-<section class="course">
-    <h1>Courses We Offer</h1>
-    <p>Lorem ipsum dolor sit amet. A facere quis At culpa iusto qui iste voluptates!</p>
-
-    <div class="row">
-        <div class="course-col">
-            <h3>Intermediate</h3>
-            <p>
-                Lorem ipsum dolor sit amet. 
-                Ut consequatur reprehenderit qui amet veniam hic quidem quis aut galisum tempore eum labore magnam et possimus pariatur et neque similique. 
-                Ut doloribus saepe ad distinctio iste ad consequatur libero. 
-            </p>
-        </div>
-        <div class="course-col">
-            <h3>Degree</h3>
-            <p>
-                Lorem ipsum dolor sit amet. 
-                Ut consequatur reprehenderit qui amet veniam hic quidem quis aut galisum tempore eum labore magnam et possimus pariatur et neque similique. 
-                Ut doloribus saepe ad distinctio iste ad consequatur libero. 
-            </p>
-        </div>
-        <div class="course-col">
-            <h3>Post Graduation</h3>
-            <p>
-                Lorem ipsum dolor sit amet. 
-                Ut consequatur reprehenderit qui amet veniam hic quidem quis aut galisum tempore eum labore magnam et possimus pariatur et neque similique. 
-                Ut doloribus saepe ad distinctio iste ad consequatur libero. 
-            </p>
-        </div>
-    </div>
-
-</section>
-
-<!--javascript for toggle menu-->
+<!------------ JavaScript for Toggle Menu --------------->
+<!--Javascript code on making the menu and close icon become responsive-->
 <script>
-    var navLinks= document.getElementById("navLinks");
-    function ShowMenu(){
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
         navLinks.style.right = "0";
     }
-    function hideMenu(){
+    function HideMenu(){
         navLinks.style.right = "-200px";
     }
-</script>
 
+</script>
+    
 </body>
 </html>

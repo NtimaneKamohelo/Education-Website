@@ -6,8 +6,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),
-     url(images/banner.png);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.png);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -16,42 +15,42 @@ nav{
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
 }
 nav img{
     width: 150px;
 }
-/*moves navigation links to the right*/
 .nav-links{
     flex: 1;
     text-align: right;
 }
-/*Focuses on the Menu- navigation links but specifically the Unordered list*/
+/*Menu*/
 .nav-links ul li{
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
 }
-/*Focuses on the navigation links-->Unordered list-->a(anchor)*/
+/*changing the anchor navigation links to white*/
 .nav-links ul li a{
     color: #fff;
     text-decoration: none;
     font-size: 13px;
 }
-/*Hover effect on the navigation links*/
+/*Adding the hover effect*/
 .nav-links ul li::after{
-    content: '';
+    content: ' ';
     width: 0%;
-    height:2px;
-    background: #f44336;
+    height: 2px;
+    background: #f44335;
     display: block;
     margin: auto;
     transition: 0.5s;
 }
 .nav-links ul li:hover::after{
-    width:100%;
+    width: 100%;
 }
+/*Edit the text*/
 .text-box{
     width: 90%;
     color: #fff;
@@ -62,43 +61,43 @@ nav img{
     text-align: center;
 }
 .text-box h1{
-        font-size: 62px;
+    font-size: 62px;
 }
 .text-box p{
     margin: 10px 0 40px;
     font-size: 14px;
     color: #fff;
 }
-/*button*/
+/*Edit the Button and make it look transparent*/
 .hero-btn{
-    display: inline-block;
+    display:inline-block;
     text-decoration: none;
     color: #fff;
     border: 1px solid #fff;
-    padding:12px 34px;
-    font-size:13px;
+    padding: 12px 34px;
+    font-size: 13px;
     background: transparent;
     position: relative;
     cursor: pointer;
 }
-/*button hover effect*/
+/*make button hover*/
 .hero-btn:hover{
-    border: 1px solid #f44336;
+    border: 1px solid #f44335;
     background: #f44336;
     transition: 1s;
 }
-/*hide icons frm the large screen*/
+/*Hide the menu and close icons for the full screen*/
 nav .fa{
     display: none;
 }
 
-@media(max-width:700px){
+/*Change media query*/
+@media(max-width: 700px){
     .text-box h1{
         font-size: 20px;
     }
-
     .nav-links ul li{
-        display:block;
+        display: block;
     }
     .nav-links{
         position: absolute;
@@ -111,60 +110,16 @@ nav .fa{
         z-index: 2;
         transition: 1s;
     }
-    /*Display icons for small devices*/
+    /*Display the menu and close icons for the full screen*/
     nav .fa{
         display: block;
-        color: #fff;
+        color:#fff;
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
     }
+    /*Add space between the navigation links*/
     .nav-links ul{
         padding: 30px;
     }
-
 }
-
-/**********Course page*********/
-
-.course{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
-}
-h1{
-    font-size: 36px;
-    font-weight: 600;
-}
-p{
-    color: #777;
-    font-size: 14%;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-}
-/****Split the course in different sections****/
-.row{
-    Margin-top: 5%;
-    display: flex;
-    justify-content: space-between;
-}
-.course-col{
-    flex-basis: 31%;
-    background: #fff3f3;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding:20px 12px;
-    box-sizing: border-box;
-    transition: 0.5s;
-}
-h3{
-    text-align: center;
-    font-weight: 600;
-    margin: 10px 0;
-}
-.course-col:hover{
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
-}
-
